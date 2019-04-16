@@ -8,7 +8,7 @@ const POST_URL = '/wp-json/wp/v2/posts?per_page=100';
 
 class App extends Component {
   state = {
-    url: 'https://darrenthomas.me.uk/nano-blog',
+    url: '',
     description: null,
     main: [],
     posts: [],
