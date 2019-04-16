@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import fetchMeta from 'fetch-meta'
 
 const MEDIA_URL = '/wp-json/wp/v2/media?per_page=100';
 const PAGE_URL = '/wp-json/wp/v2/pages?per_page=100';
@@ -77,24 +76,11 @@ class App extends Component {
         });
       })
 
-    console.log(fetchMeta({
-      uri: 'https://darrenthomas.me.uk/nano-blog'
-    }));
 
   }
 
   filterImagesByMediaType = (data) => {
     return data.media_type === 'image';
-  }
-
-  getMetaData() {
-    // const { pages, posts } = this.state;
-    // const pageMeta = [];
-
-    // pages.forEach(el => {
-    console.log(fetchMeta('https://cedarlodgehotel.ie'));
-    // });
-
   }
 
 
